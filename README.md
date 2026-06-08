@@ -1,5 +1,9 @@
 # FluxTracker v2.0 - Engineering Change Control System
 
+## What it does
+
+**FluxTracker** helps you stay on top of changes to parts, machines and assemblies. Log every engineering change with its reason, status and date, attach the supporting files (drawings, PDFs, images, even MP4 videos), then browse it all from a visual Part Grid dashboard — click any part to see its full change history. Everything is searchable and stored in a local SQLite database, so it runs completely offline. Hidden HAL-9000 easter eggs included. Windows desktop app, built with Python/Tkinter.
+
 **FluxTracker** is a powerful, standalone Windows desktop application for managing engineering changes, parts, assemblies, and their associated documentation. With support for multiple file attachments (MP4, images, ZIP, DWG, PDF, and more), an intuitive Part Grid Dashboard, and comprehensive change tracking, FluxTracker streamlines your engineering workflow.
 
 ## Features
