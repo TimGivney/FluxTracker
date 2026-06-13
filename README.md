@@ -6,6 +6,20 @@
 
 **FluxTracker** is a powerful, standalone Windows desktop application for managing engineering changes, parts, assemblies, and their associated documentation. With support for multiple file attachments (MP4, images, ZIP, DWG, PDF, and more), an intuitive Part Grid Dashboard, and comprehensive change tracking, FluxTracker streamlines your engineering workflow.
 
+## Screenshots
+
+**Dashboard** — quick-add parts, log a new engineering change, and export.
+
+![Dashboard](docs/screenshots/dashboard.png)
+
+**Add New Engineering Change** — capture part, change number, reason, status, dates and attachments.
+
+![Add New Change](docs/screenshots/add-change.png)
+
+**Easter egg: HAL 9000** 🔴 — a hidden trigger in the bottom-right of the footer wakes a HAL-9000 advisory terminal that watches your "inefficiencies." ("Hello, Commander. I've been monitoring your inefficiencies.")
+
+![HAL 9000 easter egg](docs/screenshots/easter-egg-hal9000.png)
+
 ## Features
 
 ### Core Functionality
@@ -161,7 +175,7 @@ See `Troubleshooting_Build_Guide.md` for detailed build troubleshooting
 
 ## License
 
-FluxTracker is released under the MIT License. See LICENSE file for details.
+FluxTracker is released into the public domain under [The Unlicense](LICENSE) — no copyright, do whatever you like with it.
 
 ## Creator
 
