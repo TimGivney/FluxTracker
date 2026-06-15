@@ -40,7 +40,7 @@ HAL also chimes in on its own — when you go idle, delete something, or click t
 >
 > "I'm sorry, Dave. I'm afraid I can't do that."
 
-The rarer the line, the less likely you'll see it — some only surface about 1% of the time.
+The odds are tuned for fun, so the rarer, more unhinged lines show up often — the deep-cut "Dave" lines now surface more than 1-in-10 times.
 
 ## Features
 

@@ -251,11 +251,11 @@ def hal_pick_line(bank, fallback=None):
 def hal_weighted_line(settings_count=0):
     """Return a contextual HAL line with weighted rarity."""
     roll = random.random()
-    if roll < 0.01:
+    if roll < 0.12:
         return hal_pick_line(HAL_ULTRA_RARE)
-    elif roll < 0.08:
+    elif roll < 0.35:
         return hal_pick_line(HAL_RARE)
-    elif roll < 0.20:
+    elif roll < 0.65:
         return hal_pick_line(HAL_UNSETTLING)
     else:
         return hal_pick_line(HAL_GENERAL)
