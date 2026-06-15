@@ -179,10 +179,10 @@ FluxTracker is released into the public domain under [The Unlicense](LICENSE) â€
 
 ## Creator
 
-**Tim Givney**
+**PartsBender**
 - Commission Date: April 01, 2026
 - Version: 11.3.7 Mission Calendar
-- Status: Open Source // PartsBender Exclusive
+- Status: Open Source
 
 ## Support
 

@@ -67,7 +67,7 @@ class DatabaseManager:
             # Initial data for users (if empty)
             cursor.execute("SELECT COUNT(*) FROM users")
             if cursor.fetchone()[0] == 0:
-                for name in ["Tim", "Gert", "Cam"]:
+                for name in ["Alex", "Jordan", "Sam"]:
                     cursor.execute("INSERT OR IGNORE INTO users (name) VALUES (?)", (name,))
             
             conn.commit()

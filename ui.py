@@ -1550,11 +1550,11 @@ class EngineeringChangeTrackerApp:
             tk.Label(f, text=f"{lbl}: ", font=("Helvetica", 11, "bold"), bg=PB_DEEP_BLUE, fg=PB_SOFT_BLUE).pack(side=tk.LEFT)
             tk.Label(f, text=val, font=("Helvetica", 11), bg=PB_DEEP_BLUE, fg=PB_OFF_WHITE).pack(side=tk.LEFT)
 
-        add_detail("Creator", "Tim Givney")
+        add_detail("Creator", "PartsBender")
         add_detail("Commission Date", "April 1, 2026")
         add_detail("Version", "v2.9")
-        add_detail("Status", "Open Source // PartsBender Exclusive")
-        add_detail("License", "MIT License")
+        add_detail("Status", "Open Source")
+        add_detail("License", "The Unlicense (Public Domain)")
         add_detail("Purpose", "Ultimate Engineering Part and Assembly Changes Tracking")
 
         info = """
