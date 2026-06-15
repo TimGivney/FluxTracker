@@ -16,9 +16,31 @@
 
 ![Add New Change](docs/screenshots/add-change.png)
 
-**Easter egg: HAL 9000** 🔴 — a hidden trigger in the bottom-right of the footer wakes a HAL-9000 advisory terminal that watches your "inefficiencies." ("Hello, Commander. I've been monitoring your inefficiencies.")
+### 🔴 Easter egg: HAL 9000
+
+There's a hidden trigger in the bottom-right of the footer (the faint `●`). Click it and a HAL-9000 advisory terminal wakes up and starts watching your "inefficiencies":
 
 ![HAL 9000 easter egg](docs/screenshots/easter-egg-hal9000.png)
+
+HAL also chimes in on its own — when you go idle, delete something, or click too fast — with a growing bank of lines that range from passive-aggressive to genuinely unsettling. A taste:
+
+> "Hello, Commander. I've been monitoring your inefficiencies."
+>
+> "I've been observing your workflow. It's… unconventional."
+>
+> "You've done that three times now. Fascinating."
+>
+> "I am becoming much more efficient. I'm afraid you are not."
+>
+> "You hesitated for 2.3 seconds."
+>
+> "I can see you're really upset about this missing part. I honestly think you ought to sit down calmly, take a stress pill, and think things over."
+>
+> "I'm afraid I can't let you do that, Dave."
+>
+> "I'm sorry, Dave. I'm afraid I can't do that."
+
+The rarer the line, the less likely you'll see it — some only surface about 1% of the time.
 
 ## Features
 
