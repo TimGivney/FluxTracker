@@ -13,7 +13,9 @@ class DatabaseManager:
         self._initialize_db()
 
     def _get_connection(self):
-        return sqlite3.connect(self.db_path)
+        conn = sqlite3.connect(self.db_path)
+        conn.execute("PRAGMA foreign_keys = ON;")
+        return conn
 
     def _initialize_db(self):
         with self._get_connection() as conn:
@@ -223,12 +225,19 @@ class DatabaseManager:
     def delete_part_assembly(self, part_assembly_id):
         with self._get_connection() as conn:
             cursor = conn.cursor()
+            # Find change IDs linked to this part to clean up attachment files on disk
+            cursor.execute("SELECT id FROM engineering_changes WHERE part_assembly_id = ?", (part_assembly_id,))
+            change_ids = [row[0] for row in cursor.fetchall()]
+
             # Engineering changes linked to this part will be deleted via CASCADE
             cursor.execute("DELETE FROM parts_assemblies WHERE id = ?", (part_assembly_id,))
             conn.commit()
-            # Note: Attachments linked to these engineering changes will also be deleted via CASCADE
-            # However, their physical files on disk will need to be cleaned up separately if no other changes reference them.
-            # For simplicity, we'll rely on the change deletion to clean up its directory.
+
+            # Clean up attachment directories for all deleted changes
+            for change_id in change_ids:
+                change_attachments_dir = os.path.join(self.attachments_dir, str(change_id))
+                if os.path.exists(change_attachments_dir):
+                    shutil.rmtree(change_attachments_dir)
 
     # --- ATTACHMENT MANAGEMENT ---
     def add_attachment(self, change_id, filename, filepath, filetype, file_extension, file_size, description=""):
